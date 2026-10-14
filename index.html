@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniAgent Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⚡ OmniAgent Explainer</h1>
+    <p class="subtitle">Paste any code snippet or complex topic below to break it down.</p>
+    
+    <textarea id="userInput" placeholder="Paste C/Python code or ask a question here..."></textarea>
+    
+    <div class="controls">
+      <select id="modeSelect">
+        <option value="Explain like I'm a 1st-year CS student">1st-Year CS Mode</option>
+        <option value="Find bugs and optimize time complexity">Debug & Optimize Mode</option>
+        <option value="Convert this into step-by-step flashcards">Flashcard Mode</option>
+      </select>
+      <button id="runBtn" onclick="runAgent()">Run Agent 🚀</button>
+    </div>
+
+    <div id="outputBox" class="output hidden">
+      <h3>Agent Output:</h3>
+      <pre id="responseText">Waiting for input...</pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
